@@ -1,11 +1,10 @@
-{
-  "type": "Wall",
-  "name": "Ranainium Wall",
-  "buildCostMultiplier": 1.0,
-  "health": 1200,
-  "size": 1,
-  "requirements": [
-    "ranainium/8"
-  ],
-  "category": "defense"
-}
+type: Wall
+name: "Ranainium Wall"
+buildCostMultiplier: 1.0
+health: 2197
+armor: 5
+size: 1
+requirements: [
+  ranainium/6
+]
+  category: defense
