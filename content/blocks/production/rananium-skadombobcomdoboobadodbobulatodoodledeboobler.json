@@ -1,53 +1,57 @@
-{
-    "type": "GenericCrafter",
-	"name": "Ranainium Skadombobcomdoboobadodbobulatodoodledeboobler",
-	"description": "Combines... you know... stuff... into ranainium.\nMay actually waste some resources during the process.",
-       "drawer": {
-         "type": "DrawMulti",
-        "drawers": [
-          {
-        "type": "DrawDefault"
-        },
-        {
-	 "type": "DrawFlame",
-			"suffix": "-top",
-			"flameRadius": 0.0,
-			"flameRadiusIn": 0.0,
-			"flameRadiusScl": 0.0,
-			"flameRadiusMag": 0.0,
-			"flameRadiusInMag": 0.0
-       }
-        ]
-	},
-	"size": 1,
-	"hasPower": true,
-	"hasLiquids": false,
-	"hasItems": true,
-	"itemCapacity": 156,
-	"craftTime": 780,
-	"craftEffect": "plasticburn",
-	"updateEffect": "none",
-	"consumes": {
-		"power": 3,
-		"items": {
-			"items": [
-		        "copper/91"
-		        "titanium/15"
-		        "sand/130"
-                        "plastanium/55",
-		        "phase-fabric/78"
-                        "surge-alloy/52",
-                        "blast-compound/78",
-		        "spore-pod/6"
-			]
-		}
-	},
-	"requirements": [
-        "copper/500",
-        "titanium/350",
-        "silicon/500",
-        "surge-alloy/35"
-	],
-	"category": "crafting",
-	"outputItem": "ranainium/7"
+type: GenericCrafter
+name: "Ranainium Skadombobcomdoboobadodbobulatodoodledeboobler"
+description: "Combines... you know... stuff... into ranainium.\nMay actually waste some resources during the process."
+scaledHealth: 40
+armor: 13
+craftTime: 780
+craftEffect: plasticburn
+requirements: [
+  lead/500
+  thorium/300
+  silicon/450
+  plastanium/100
+  surge-alloy/100
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawFlame
+      suffix: "-top"
+      flameRadius: 0
+      flameRadiusIn: 0
+      flameRadiusScl: 0
+      flameRadiusMag: 0
+      flameRadiusInMag: 0
+    }
+    {
+    type: DrawGlowRegion
+    color: f9e7d3
+    alpha: 0.5
+    }
+  ]
 }
+hasPower: true
+hasLiquids: false
+hasItems: true
+itemCapacity: 156
+consumes: {
+  power: 3
+  items: {
+    items: [
+      copper/78
+      titanium/15
+      sand/78
+      plastanium/55
+      phase-fabric/78
+      surge-alloy/52
+      blast-compound/78
+      spore-pod/6
+    ]
+  }
+}
+outputItem: ranainium/7
+category: crafting
