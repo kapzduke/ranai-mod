@@ -1,12 +1,12 @@
 {
     "type": "GenericCrafter",
-	"name": "Ranainium manual combobobulator",
-	"description": "Combines materials in order to craft ranainium. Very small, and very cursed",
+	"name": "Ranainium Skadombobcomdoboobadodbobulatodoodledeboobler",
+	"description": "Combines... you know... stuff... into ranainium.\nMay actually waste some resources during the process.",
        "drawer": {
          "type": "DrawMulti",
         "drawers": [
           {
-        "type": "DrawDefualt"
+        "type": "DrawDefault"
         },
         {
 	 "type": "DrawFlame",
@@ -23,18 +23,22 @@
 	"hasPower": true,
 	"hasLiquids": false,
 	"hasItems": true,
-	"itemCapacity": 90,
-	"craftTime": 9900,
+	"itemCapacity": 156,
+	"craftTime": 780,
 	"craftEffect": "plasticburn",
 	"updateEffect": "none",
 	"consumes": {
 		"power": 3,
 		"items": {
 			"items": [
-                "blast-compound/30",
-                "surge-alloy/60",
-                "plastanium/30",
-				"phase-fabric/90"
+		        "copper/91"
+		        "titanium/15"
+		        "sand/130"
+                        "plastanium/55",
+		        "phase-fabric/78"
+                        "surge-alloy/52",
+                        "blast-compound/78",
+		        "spore-pod/6"
 			]
 		}
 	},
@@ -42,8 +46,8 @@
         "copper/500",
         "titanium/350",
         "silicon/500",
-        "surge-alloy/700"
+        "surge-alloy/35"
 	],
 	"category": "crafting",
-	"outputItem": "ranainium/1"
+	"outputItem": "ranainium/7"
 }
